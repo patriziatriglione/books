@@ -6,4 +6,11 @@ module.exports = {
     },
   },
   plugins: [],
-}
+  output: {
+    css: {
+      dir: './css',
+      name: 'tailwind',
+    },
+  },
+};
+
