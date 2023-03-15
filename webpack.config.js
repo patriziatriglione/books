@@ -41,19 +41,15 @@ const config = {
                     MiniCssExtractPlugin.loader,'css-loader', 'postcss-loader'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-                use: [
-                    {
-                      loader: 'file-loader',
-                      options: {
-                        name: '[name].[ext]',
-                        outputPath: 'images/',
-            },
-        },
-
-        ],
-    },
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: '/images',
+                  publicPath: '/images',
+                },
+              },
+              
 ],
     },
 };
