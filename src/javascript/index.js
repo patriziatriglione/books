@@ -1,5 +1,4 @@
 import "../css/style.css";
-import '../css/tailwind.css';
 const axios = require('axios');
 const _ = require('lodash');
 const Swal = require('sweetalert2');
@@ -68,7 +67,7 @@ genreButtons.forEach(button => {
   })
 // function to call the api
 async function searchBooks(query) {
-  const url = `http://openlibrary.org/search.json?q=${query}&limit=25`;
+  const url = `https://openlibrary.org/search.json?q=${query}&limit=25`;
   const response = await axios.get(url);
   const books = response.data.docs;
   return books;
@@ -92,9 +91,9 @@ for (const book of books) {
     bookTitle.innerText = book.title;
     bookAuthor.innerText = `Author: ${book.author_name}` || `Unknown`;
     if (book.cover_i) {
-      bookCover.src = `http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
+      bookCover.src = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
     } else {
-      bookCover.src = 'http://via.placeholder.com/128x192.png?text=No+Cover';
+      bookCover.src = 'https://via.placeholder.com/128x192.png?text=No+Cover';
     }
     bookList.appendChild(listItem);
     listItem.appendChild(bookCover);
@@ -106,7 +105,7 @@ for (const book of books) {
       Swal.fire ({
         title: book.title,
         text: typeof bookData.description === 'object' ? 'Sorry! The description is not available' : bookData.description,
-        imageUrl: `http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`,
+        imageUrl: `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`,
         imageAlt: book.title,
         confirmButtonText: "Close",
         backdrop: `rgba(0,157,255,0.34)`,
