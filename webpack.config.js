@@ -38,7 +38,7 @@ const config = {
             {
                 test: /\.css$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,'css-loader'],
+                    MiniCssExtractPlugin.loader,'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
