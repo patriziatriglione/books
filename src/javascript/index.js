@@ -1,5 +1,5 @@
 import "../css/style.css";
-import "../css/tailwind.css";
+import '../css/tailwind.css';
 const axios = require('axios');
 const _ = require('lodash');
 const Swal = require('sweetalert2');
