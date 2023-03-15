@@ -8,7 +8,7 @@ module.exports = {
   plugins: [],
   output: {
     css: {
-      dir: './css',
+      dir: '.dist/css',
       name: 'tailwind',
     },
   },
