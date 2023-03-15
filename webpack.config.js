@@ -43,11 +43,19 @@ const config = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: 'asset',
+                use: [
+                    {
+                      loader: 'file-loader',
+                      options: {
+                        name: '[name].[ext]',
+                        outputPath: 'images/',
+                        publicPath: 'images/',
             },
+        },
 
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
         ],
+    },
+],
     },
 };
 
