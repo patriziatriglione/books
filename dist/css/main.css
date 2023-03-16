@@ -35,3 +35,12 @@
     color: darkblue;
 
 }
+@media screen and (max-width:630px) { 
+.books {
+    width: 120%;
+}    
+.genre-button {
+    margin: 0 5%;
+}
+}
+
