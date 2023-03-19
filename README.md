@@ -10,7 +10,8 @@ You can try it [here](https://the-world-of-books.netlify.app/).
 1. Description
 2. Istructions
 3. Example
-4. Badges
+4. API
+5. Badges
 
 #### Description
 This site is a kind of "google" for books where you can search for the title, author or genre of a book. 
@@ -39,7 +40,26 @@ After it we find the search bar where it is possible to write genre, author name
 
 ![button](https://github.com/patriziatriglione/books/blob/main/src/images/screen/button.png)
 
+- In addition to the buttons, we can use the search bar where, by typing the title, author or genre, we will have a list of books related to what we have written
 
+![search](https://github.com/patriziatriglione/books/blob/main/src/images/screen/search.png)
+
+- for each book, in addition to the cover, title and author, we have a button that takes us to the description of the book.
+![description](https://github.com/patriziatriglione/books/blob/main/src/images/screen/description.png)
+
+- In the event that we write the title, author and genre incorrectly or simply not present, an error message will come out warning that the searched word has not produced any results
+
+![error](https://github.com/patriziatriglione/books/blob/main/src/images/screen/errormessage.png)
+
+#### Example 
+![example](https://github.com/patriziatriglione/books/blob/main/src/images/screen/example.gif)
+
+#### API
+As for searching for books, the Open Library API was used.
+
+[Site](https://openlibrary.org/)
+
+----
 
 This project has been created using **webpack-cli**, you can now run
 
@@ -55,7 +75,9 @@ yarn build
 
 to bundle your application
 
+----
 
+#### Badges
 
 
 <h3 align="left">Connect with me:</h3>
