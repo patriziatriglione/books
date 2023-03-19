@@ -2,6 +2,44 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=patriziatriglione&label=Profile%20views&color=0e75b6&style=flat" alt="patriziatriglione" /> </p>
 
+"The world of books" is a project created for start2impact using everything learned during the Javascript Advanced course.
+
+You can try it [here](https://the-world-of-books.netlify.app/).
+
+### Index
+1. Description
+2. Istructions
+3. Example
+4. Badges
+
+#### Description
+This site is a kind of "google" for books where you can search for the title, author or genre of a book. 
+Also, there are buttons where you can view a list of books based on the selected genre. 
+Each book shows the title, the author. cover and its description.
+If you enter an unknown title or author, a warning will be shown.
+
+There is also a small carousel in which a sentence relating to the world of reading appears every few seconds.
+
+Javascript and some of its libraries were used for this project, including <b>Axios, Lodash</b> and <b>Sweetalert2</b>.
+For the graphic part, however, the <b>"Tailwind Css"</b> framework was used.
+
+#### Istructions
+The site looks like this:
+
+- At the top we find his name and the carousel with phrases inspired by the world of reading.
+After it we find the search bar where it is possible to write genre, author name or title of a book and, by pressing enter or clicking "search", the search begins.
+
+![site](https://github.com/patriziatriglione/books/blob/main/src/images/screen/site.png)
+
+- After the search bar we have a series of buttons that recall some genres of books.
+
+![sitebutton](https://github.com/patriziatriglione/books/blob/main/src/images/screen/sitebutton.png)
+
+- When you click a button, a list of books of the selected genre appears. Here, for example, by clicking on "cooking", books of the "cooking" genre are displayed.
+
+![button](https://github.com/patriziatriglione/books/blob/main/src/images/screen/button.png)
+
+
 
 This project has been created using **webpack-cli**, you can now run
 
